@@ -1,19 +1,53 @@
-# Assignment 10
+# 🧭 Project Overview
 
-## Requirements
-1. Add multiple *undo* and *redo* functionality for the `add`, `remove`, and `update` operations. Implement this functionality using inheritance and polymorphism. You will have **Undo** and **Redo** buttons on the GUI, as well as a key combination to undo and redo the operations (e.g. `Ctrl+Z`, `Ctrl+Y`).
+**Event Management App** is a desktop application built in **C++** using the **Qt framework**, designed for efficient event management.  
+It allows **users** and **administrators** to create, update, delete, and view events, export lists (CSV/HTML), and provides **undo/redo functionality**.
 
-2. Show the contents of the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list` using a table view. You must use the [Qt View/Model](https://doc.qt.io/qt-6/modelview.html) components (`QTableView`). Create your own model – a class which inherits from [`QAbstractTableModel`](https://doc.qt.io/qt-6/qabstracttablemodel.html). This window will be opened from your GUI's main window.
+---
 
-<!--
-## Bonus Possibility [0.1p]
-Add multiple *undo* and *redo* functionality for the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list`. This will be tested through the application's GUI.
+## 🧠 The Project Demonstrates
 
+- Clean **object-oriented programming** principles (inheritance, polymorphism)  
+- A **layered architecture** separating domain, service, and GUI layers  
+- Practical **GUI programming** using Qt Widgets  
+- Advanced user interactions like **Undo/Redo** via the Command Pattern  
 
-## Bonus Possibility [0.1p]
-Use [custom Qt delegates](https://doc.qt.io/qt-6/qtwidgets-itemviews-stardelegate-example.html). In one of the columns of the Qt table view that shows the elements of the `adoption list` / **etc...**, display an image of the dog, trench coat or a play button that plays the movie trailer or the tutorial - depending on the problem statement. See the example images below.
+---
 
-![image](https://user-images.githubusercontent.com/25611695/119180503-0bfef700-ba79-11eb-86ae-3a42d41bb437.png)
-![image](https://user-images.githubusercontent.com/25611695/119180582-2507a800-ba79-11eb-921c-22f64a05522b.png)
+## 💡 What It Solves
 
--->
+- Organizes and tracks events with attributes such as **date/time**, **description**, and **type**  
+- Provides **role-based operations** for admins and users  
+- Implements an **undo/redo stack** to maintain action history and recover from mistakes  
+- Supports **data export** for reporting or sharing in **CSV** and **HTML** formats  
+
+---
+
+## 🎮 Usage
+
+### 👩‍💼 Admin Mode
+- Add, edit, or delete events  
+- Undo/Redo changes  
+- Export event list to CSV or HTML  
+
+### 👤 User Mode
+- Browse and view events  
+- Save favorite events *(if implemented)*  
+
+### ⌨️ Keyboard Shortcuts
+- `Ctrl + Z` → Undo  
+- `Ctrl + Y` → Redo  
+
+---
+
+## ⚙️ Technology Stack
+
+| Component | Description |
+|------------|--------------|
+| **Language** | C++ (pure, no managed code) |
+| **GUI Framework** | Qt (Qt Widgets) |
+| **Data Storage** | In-memory + file-based persistence (CSV/HTML export) |
+| **Design Patterns** | Command Pattern (for undo/redo), Model-View (Qt’s QAbstractTableModel) |
+| **Platform** | Desktop application (Windows/Linux) |
+
+---
