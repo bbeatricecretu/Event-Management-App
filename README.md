@@ -44,10 +44,11 @@ It allows **users** and **administrators** to create, update, delete, and view e
 
 | Component | Description |
 |------------|--------------|
-| **Language** | C++ (pure, no managed code) |
+| **Language** | C++ |
 | **GUI Framework** | Qt (Qt Widgets) |
 | **Data Storage** | In-memory + file-based persistence (CSV/HTML export) |
 | **Design Patterns** | Command Pattern (for undo/redo), Model-View (Qt’s QAbstractTableModel) |
 | **Platform** | Desktop application (Windows/Linux) |
 
 ---
+
